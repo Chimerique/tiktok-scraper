@@ -343,9 +343,9 @@ export class TikTokScraper extends EventEmitter {
             await this.storeDownlodProgress();
         }
 
-        if (this.noWaterMark) {
+        //if (this.noWaterMark) {
             await this.withoutWatermark();
-        }
+        //}
 
         const [json, csv, zip] = await this.saveCollectorData();
 
